@@ -1,14 +1,10 @@
-<html>
-	<head>
-		<title>POST Page</title>
-		<link rel="stylesheet" type="text/css" href="/static/custom.css">
-	</head>
-	<body>
-		<h1>You simply loaded this page!</h1>
-		<form method="POST" action="/post">
-			<div class="center">
-				<button type="submit">Try Sending A Post request!</button>
-			</div>
-		</form>
-	</body>
-</html>
+{% extends "base.html" %}
+{% block title %}GET Request{% endblock %}
+{% block content %}
+	<h1>You simply loaded this page!</h1>
+	<form method="POST" action="/post">
+		<div class="center">
+			<button type="submit">Try Sending A Post request!</button>
+		</div>
+	</form>
+{% endblock %}

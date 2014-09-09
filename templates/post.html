@@ -1,9 +1,5 @@
-<html>
-	<head>
-		<title>POST Page</title>
-		<link rel="stylesheet" type="text/css" href="/static/custom.css">
-	</head>
-	<body>
-		<h1>You sent a POST request to this URL!</h1>
-	</body>
-</html>
+{% extends "base.html" %}
+{% block title %}GET Request{% endblock %}
+{% block content %}
+	<h1>You sent a POST request to this URL!</h1>
+{% endblock %}

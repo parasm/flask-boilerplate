@@ -9,6 +9,7 @@ def hello():
 	return render_template("index.html")
 
 @app.route('/change')
+def redirect():
 	return redirect('/')
 
 @app.route('/post', methods=['GET','POST'])
