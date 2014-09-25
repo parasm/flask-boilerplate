@@ -2,9 +2,10 @@
 {% block title %}GET Request{% endblock %}
 {% block content %}
 	<h1>You simply loaded this page!</h1>
-	<form method="POST" action="/post">
+	<form method="POST" action="/">
 		<div class="center">
-			<button type="submit">Try Sending A Post request!</button>
+			<input name='person'>
+			<button type="submit">Submit</button>
 		</div>
 	</form>
 {% endblock %}

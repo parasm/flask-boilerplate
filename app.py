@@ -4,12 +4,16 @@ import os
 
 app = Flask(__name__)
 
-@app.route('/')
+@app.route('/', methods=['GET','POST'])
 def hello():
+	if request.method == 'POST':
+		person = request.args.get('name')
+		people.write({person:None})
+		return render_template(SOME PAGe)
 	return render_template("index.html")
 
 @app.route('/change')
-def redirect():
+def chance():
 	return redirect('/')
 
 @app.route('/post', methods=['GET','POST'])
