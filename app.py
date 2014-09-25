@@ -4,12 +4,8 @@ import os
 
 app = Flask(__name__)
 
-@app.route('/', methods=['GET','POST'])
+@app.route('/')
 def hello():
-	if request.method == 'POST':
-		person = request.args.get('name')
-		people.write({person:None})
-		return render_template(SOME PAGe)
 	return render_template("index.html")
 
 @app.route('/change')
